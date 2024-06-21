@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    /* border: 1px solid red; */
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(180deg,rgba(227,255,248,0),rgba(227,255,248,0.38));
+    min-height: 100vh;
+}
+#page{
+    /* border: 1px solid green; */
+    width: 1000px;
+    margin: 0px auto 0px;
+    padding-top: 65px;
+}
+nav{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+main{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 80px;
+    /* border: 1px solid greenyellow; */
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+}
+ul li{
+    color: #7D7987;
+}
+ul a{
+    opacity: 0.5;
+}
+ul a:hover{
+    font-weight: bold;
+}
+ul a:active{
+    color: #7D7987;
+}
+h1{
+    width: 490px;
+    /* border: 1px solid red; */
+    font-family: 'Mulish', sans-serif;
+    font-weight: normal;
+    font-size: 49px;
+    line-height: 56px;
+    color: #000;
+}
+h1 span{
+    color: #89C5CC;
+    font-weight: bold;
+    
+}
+section p{
+    width: 438px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 28px;
+    /* border: 1px solid salmon; */
+    margin: 40px 0 40px;
+}
+button{
+    font-family: 'Open Sans', sans-serif ;
+    color: #f9f9f9;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 4px;
+    font-size: 16;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #69b99d;
+    padding: 14px 32px 15px;
+    gap: 10px;
+}
+button:hover{
+    background-color: #4aae8b;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+footer p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    /* font-weight: bold; */
+    line-height: 28px;
+    color: #000;
+
+}
+footer p a{
+    color: #000;
+    font-weight: bold;
+}
+footer p a:hover{
+    color: #000;
+    font-weight: bold;
+}
+footer p a:active{
+    color: #000;
+}
+img#balls{
+position: relative;
+left: 93%;
+}

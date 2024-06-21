@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+:root {
+    /*
+    16PX É O PADRÃO UTILIZADO PELOS NAVEGADORES
+    16PX = 100%
+    10PX = X%
+    X% = 62.5%
+    */
+    font-size: 62.5%; /* 10PX */ 
+    /* 16PX = 1.6rem */
+}
+body {
+    font-family: 'Epilogue', sans-serif;   
+    background: #ECE9FD;
+    padding: 6.0rem 2.3rem 6.6rem;
+    /* SUPER IMPORTANTE PARA O :ROOT{} FUNCIONAR*/
+    font-size: 1.6rem;
+  } 
+main {
+    /* LARGURA MAXIMA 33 */
+    max-width: 33.0rem;
+    /* ALINHA NO CENTRO DA PAGINA */
+    margin: 0 auto;
+}  
+h1 {
+    font-weight: 800;
+    font-size: 4.0rem;
+    line-height: 4.8rem;
+    color: #090039;
+    margin-bottom: 1.5rem;
+} 
+main p:first-child {
+    color: #7158EF;
+    /*ESPAÇAMENTO ENTRE OS CARACTERES*/
+    letter-spacing: 3px;
+    /*TRANSFORMA TODAS AS LETRAS EM MAIÚSCULAS*/
+    text-transform: uppercase;
+    /*DISTANCIAMENTO DAS LINHAS*/
+    line-height: 3.2rem;
+    margin-bottom: 1.7rem;
+} 
+h1 + p {
+    color: rgba(10, 0, 57, 0.64);
+    line-height: 3.2rem;
+    margin-bottom: 3.2rem;
+}
+a {
+    color: #090039;
+   /*RETIRA A FORMATAÇÃO DOS LINKS(SUBLINHADO, ETC)*/
+    text-decoration: none;
+}
+a:hover {
+    font-weight: bold;
+    color: #7158EF;
+}
+ul {
+    margin-top: 7.2rem;
+} 
+ul li {
+    max-width: 25.7rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+    color: #090039;
+    display: flex;
+    /* justify-content: center; */
+    gap: 3.8rem;
+} 
+ul li span {
+    font-size: 7.2rem;
+    font-weight: 800;
+    line-height: 8.0rem;
+    letter-spacing: -2px;
+    color: #090039;
+    /* width: 10.5rem; */
+    /* border: 1px solid #7158EF; */
+}
+/* At rules pg 05 */
+/* 40em = +/- 640px */
+/* min-width-> A partir de X ele ira alterar o código. */
+@media(min-width: 700px){
+
+    main{
+        max-width: 1440px;
+        display: flex;
+        gap: 10rem;
+        margin: 0 auto;
+        padding: 8rem 13.5rem;
+    }
+    div.box{
+        /* border: 1px solid black; */
+        max-width: 484px;
+        /* flex: 1; */
+    }
+
+    ul li{
+        /* border: 1px solid red; */
+        gap: 5.3rem;
+        max-width: 450px;
+        align-items: center;
+      }
+    
+    
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Mentoria</title>
+</head>
+<body>
+  <div id="page">
+    <header>
+      <h1>
+        Mentoria
+      </h1>
+      <p>Preencha o formulário abaixo para<br> agendar a sua mentoria</p>
+    </header>
+    <main>
+      <form id="event-form">
+        <fieldset>
+          <legend>Informações pessoais</legend>
+          <div class="event-wrapper">
+            <div class="campus">
+              <label for="event-name">Nome:  
+              </label>
+              <input type="text" id="event-name">
+            </div>
+            <div class="campus">
+              <label for="event-surname">Sobrenome:</label>
+              <input type="text" id="event-surname">
+            </div>  
+        </div><!--Fim event-wrapper-->
+          <div class="event-wrapper">
+            <div class="campus">
+              <label for="event-email">Email<span>(Digite um email válido)</span></label>
+              <input type="email" id="event-email">
+            </div>
+          </div>
+          <div class="event-wrapper">
+            <div class="campus">
+              <label for="event-password">Senha<span>(Minimo 6 caracteres)</span></label>
+              <input type="password" id="event-password">
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Informações do mentor</legend>
+          <div class="event-wrapper">
+            <div class="campus">
+              <label for="event-mentor">Nome do seu mentor<span>(Digite só o primeiro nome)</span></label>
+              <input type="text" id="event-mentor">
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Seus horários disponíveis</legend>
+          <p>Primeira mentoria</p>
+          <div class="event-wrapper">
+            <div class="campus">
+              <label for="event-firstMentorship">Data<span>(DD/MM/AAA)</span></label>
+              <input 
+              type="text" 
+              placeholder="" 
+              onfocus="this.type='date'"
+              onblur="if (!this.value) this.type='text'"
+              id="event-firstMentorship"	
+              >
+            </div>
+            <div class="campus">
+              <label for="event-firstBegins">Das</label>
+              <input type="time" id="event-firstBegins">
+            </div>
+            <div class="campus">
+              <label for="event-firstUntil">Até</label>
+              <input type="time" id="event-firstUntil">
+            </div>
+          </div>
+          <p>Segunda mentoria</p>
+          <div
+           class="event-wrapper"
+           style="margin-bottom: 0;">
+            <div class="campus">
+              <label for="event-secondMentorship">Data<span>(DD/MM/AAA)</span></label>
+              <input 
+              type="text" 
+              placeholder="" 
+              onfocus="this.type='date'"
+              onblur="if (!this.value) this.type='text'"
+              id="event-secondMentorship"	
+              >  
+            </div>
+            <div class="campus">
+              <label for="event-SecondBegins">Das</label>
+              <input type="time" id="event-secondBegins">
+            </div>
+            <div class="campus">
+              <label for="event-secondUntil">Até</label>
+              <input type="time" id="event-secondUntil">
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <input type="submit" id="myform" form="event-form">
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,198 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #BFD7E4;
+}
+body::after{
+  content: "";
+  height: 465px;
+  width: 100%;
+  background-color: #293241;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+header{
+  /* border: 1px solid red; */
+  width: 750px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 107px;
+}
+header h1{
+  font-family: "Staatliches", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #ffffff;
+}
+header p{
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 20px;
+
+}
+header img{
+  margin-bottom: 32px;
+}
+#P-info{
+  width: 750px;
+  height: 133px;
+  background-color: #f67669;
+  border-radius: 20px 20px 0 0;
+  font-family: "Staatliches", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main{
+  margin: 0 auto;
+  width: 750px;
+  height: 1075px;
+  background-color: #ffffff;
+  padding: 32px 64px 64px;
+}
+fieldset{
+  border: none;
+  /* border:1px solid salmon;  */
+  display: flex;
+  justify-content: space-between;
+  gap: 22px;
+  margin-bottom: 30px;
+}
+.campus{
+display: flex;
+flex-direction: column;
+flex: 1;
+/* border: 1px solid black; */
+}
+.campus label{
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #4e4958;
+  margin-bottom: 8px;
+}
+.campus label span{
+  color: #c1bccc;
+}
+.campus input{
+  font-family: "Poppins", sans-serif;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid #e6e6f0;
+  background-color: #fafafc;
+  padding: 5px;
+}
+.campus legend{
+  text-align: center;
+  font-family: "Staatliches", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  color: #253b51;
+  border-bottom: 1px solid #e6e6f0;
+  padding: 0 8px 8px 8px;
+  margin-bottom: 32px;
+}
+.campus select{
+  width: 300px;
+  height: 56px;
+  border: 1px solid #e6e6f0;
+  background-color: #fafafc;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #4e4958;
+}
+textarea{
+  border-radius: 8px;
+  height: 166px;
+  border: 1px solid #e6e6f0;
+  background-color: #fafafc;
+  color: #4e4958;
+  padding: 5px;
+}
+.checkboxCampus{
+  position: relative;
+}
+.checkboxCampus input{
+  /* IMPORTANTE!! O ABSOLUTE SÓ CONSEGUE SE MOVIMENTAR DENTRO DA CAIXA RELATIVA DE CHECKBOX-WRAPPER*/
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  opacity: 0%;
+}
+.checkboxCampus input:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.00016 16.1698L4.83016 11.9998L3.41016 13.4098L9.00016 18.9998L21.0002 6.99984L19.5902 5.58984L9.00016 16.1698Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
+}
+.checkboxCampus input:focus + label::before {
+  outline: 2px solid black;
+}
+.checkboxCampus label::before{
+  content: ''; /*É OBRIGATORIO TER ISSO*/
+  border: 1px solid #E6E6F0;
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+}
+.checkboxCampus label{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #4e4958;
+  margin-bottom: 8px;
+}
+.wrapper-date{
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+}
+.beginsUntil{
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.beginsUntil #event-nextMentoria{
+  margin-right: 32px;
+}
+.beginsUntil #event-begins{
+  margin-right: 10px;
+}
+#fieldset-end{
+  margin-bottom: 0;
+}
+
+input#myForm {
+  width: 622px;
+  height: 51px;
+  background-color: #f67669;
+  margin-top: 64px;
+  border-style: none;
+  border-radius: 8px;
+  font-family: "Staatliches", sans-serif;
+  font-size: 20px;
+  font-weight: 400px;
+  line-height: 26px;
+  color: #ffffff;
+}
+input#myForm:hover{
+  background-color: #f5695a;
+}
