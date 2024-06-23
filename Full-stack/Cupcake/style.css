@@ -8,6 +8,55 @@
 }
 body{
   font-size: 1.6rem;
+  font-family: "Alice", Sans-serif;
+  color: #573A37;
   background-image: url(./assets/BackGround.jpg);
   background-size: cover;
+}
+main{
+  width: 80rem;
+  background-color: #F0E8C2;
+  margin: 4.8rem auto;
+  border-radius: 2.4rem;
+  padding: 2.4rem;
+}
+#page{
+  width: 75.2rem;
+  padding: 2.4rem;
+}
+div#page img{
+ margin-bottom: 2.4rem;
+}
+h1{
+  color: #291B1A;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+section#about p{
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+}
+h2{
+  color: #291B1A;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: .4rem;
+}
+ul{
+  /* Retira os pontos da ul se quiser */
+  /* list-style: none;*/
+  margin-bottom: 2.4rem;
+}
+ul li{
+  margin-left: 1.5rem;
+}
+section#preparation p{
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
 }
