@@ -7,16 +7,20 @@
   font-size: 62.5%;
 }
 body{
+  min-height: 129rem;
+  min-height: 159.8rem;
+
   font-size: 1.6rem;
   font-family: "Alice", Sans-serif;
   color: #573A37;
   background-image: url(./assets/BackGround.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 main{
   width: 80rem;
   background-color: #F0E8C2;
-  margin: 4.8rem auto;
+  margin: 4.8rem auto 2.8rem;
   border-radius: 2.4rem;
   padding: 2.4rem;
 }
@@ -53,10 +57,22 @@ ul{
 }
 ul li{
   margin-left: 1.5rem;
+  margin-bottom: .4rem;
 }
-section#preparation p{
+section#preparation p + p{
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.5;
-  margin-bottom: 1.2rem;
+  margin-top: 1.2rem;
+}
+footer{
+  color: #F0E8C2;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+footer img{
+ /* Muito pouco utilizado, normalmente é utilizado via flex  */
+  vertical-align: middle;
 }
