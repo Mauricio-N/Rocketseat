@@ -17,7 +17,7 @@ body{
 }
 section{
   border-bottom: 1px solid #D9D9D9;
-  padding: 4.8rem;
+  padding-bottom: 4.8rem;
   margin-bottom: 4rem;
   
 }
@@ -25,7 +25,6 @@ section .note{
   color: #E1624F;
   font-size: 1.6rem;
   font-weight: bold;
-  /* line-height: auto; */
   margin-bottom: .8rem;
   text-transform: uppercase;
 }
@@ -33,17 +32,19 @@ h1{
   color: #1b1b1b;
   font-size: 3.6rem;
   font-weight: bold;
-  margin-bottom: 4rem;
 }
 section img{
   width: 100%;
   margin-bottom: 2.4rem;
+  margin-top: 4.8rem;
 }
 section .footerImage{
   font-size: 1.6rem;
   font-style: italic;
   color: #333333;
+  text-align: center;
 }
+
 h2{
   font-size: 3.2rem;
   font-weight: bold;
@@ -53,11 +54,11 @@ h2{
 
 
 .note p{
-  /* color: red; */
   color: #333333;
   font-size: 1.6rem;
   margin-bottom: 6.4rem;
 }
+
 ol li{
   margin-left: 3rem;
   font-size: 2.8rem;
@@ -65,9 +66,46 @@ ol li{
   color: #1b1b1b;
   margin-bottom: .4rem;
 }
-ul li{
-  margin-left: 2rem;
-  list-style: disc;
-  font-size: 1.6rem;
+ol p{
+  margin-bottom: 3rem;
+}
+ul p{
+  font-weight: bold;
+  margin-bottom: 0;
+}
+ul li::marker {
   color: #333333;
 }
+ul li {
+  color: #0c51a7;
+  list-style: disc;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-left: 2.5rem;
+}
+footer p{
+  color: #333333;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 4.8rem;
+}
+#page section + p{
+  margin-top: 4rem;
+  text-align: center;
+}
+#couples{
+  color: #591b98 ;
+  margin-bottom: 0;
+}
+#family{
+  color: #E5245e;
+  margin-bottom: 0;
+}
+#budget{
+  color: #e95e10;
+  margin-bottom: 0;
+}
+
