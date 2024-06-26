@@ -26,7 +26,23 @@
 
 }
 body{
+  /* width: 128rem; */
+  margin: 0 auto;
   font-size: 1.6rem;
   color: var(--text-color-secundary);
   background-color: var(--background-color);
+}
+a{
+  /* TIRA O SUBLINHADO DO LINK */
+  text-decoration: none;
+  /* TIRA O AZUL HORRIVEL DO LINK E HERDA A COR DO PAI!!! */
+  color: inherit;
+}
+a:hover{
+  color: var(--brand-color);
+  /* COLOCA A LINHA SOMENTE QUANDO A PESSOA PASSA O MOUSE SOBRE O LINK */
+  text-decoration: underline;
+}
+.container{
+  padding-inline: 3.2rem;
 }
