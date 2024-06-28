@@ -6,22 +6,21 @@ header{
 .profile{
   display: flex;
   align-items: center;
-  max-width: 59rem;
+  max-width: 58rem;
   gap: 3.2rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .profile img{
   width: 17.6rem;
 }
 #about{
   max-width: 38.4rem;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   }
 section#about h1{
   font: var(--text-lg);
   margin-bottom: .8rem;
-  color: var(--vermelho);
-  /* color: red; */
+  color: var(--text-color-primary);
 }
 section#about p{
   font: var(--text-md);
