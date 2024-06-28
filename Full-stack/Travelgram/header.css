@@ -1,0 +1,46 @@
+header{
+  display: flex;
+  justify-content: space-between;
+  padding-block: 3.6rem;  
+}
+.profile{
+  display: flex;
+  align-items: center;
+  max-width: 59rem;
+  gap: 3.2rem;
+  border: 1px solid red;
+}
+.profile img{
+  width: 17.6rem;
+}
+#about{
+  max-width: 38.4rem;
+  border: 1px solid black;
+  }
+section#about h1{
+  font: var(--text-lg);
+  margin-bottom: .8rem;
+  color: var(--vermelho);
+  /* color: red; */
+}
+section#about p{
+  font: var(--text-md);
+}
+.info{
+  display: flex;
+  align-items: center;
+}
+.info ul{
+  width: 28rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  gap:1.6rem;
+}
+.info ul li{
+  display: flex;
+  align-items: center;
+  font: var(--text);
+  gap:.8rem;
+}
