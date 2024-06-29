@@ -1,0 +1,10 @@
+footer{
+  font: var(--text-md);
+  display: flex;
+  justify-content: space-between;
+  gap: 1.6rem;
+  padding-block: 2.2rem;
+}
+footer a:nth-child(1){
+  flex: 1;
+}

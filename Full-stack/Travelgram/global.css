@@ -9,15 +9,15 @@
   
   --brand-color: #EF5F4C;
   --background-color: #FFFFFF;
-  --skeleton-clor: #D9D9D9;
-  --surface-color: #F5F5F5
+  --skeleton-color: #D9D9D9;
+  --surface-color: #F5F5F5;
   --shape-transparency: #FFFFFF8f;
   --text-color-primary: #313131;
   --text-color-secundary: #6C6C6C;
 
   --font-family: "Poppins", fantasy;
   /* short--> font: weight size/line-height font-family;  */
-  --text-sm: 1.2rem/175% var(--font-family);
+  --text-sm: 1.2rem/170% var(--font-family);
   /* 16*1.5=24px =150% */
   --text: 1.6rem/1.5 var(--font-family);
   --text-md: 1.4rem/170% var(--font-family);
@@ -45,6 +45,7 @@ a:hover{
   padding-inline: 3.2rem;
   /* COM O MAX ELE VAI SEGURAR ATÉ O MAXIMO */
   max-width: 128rem;
+  min-width: 74rem;
   /*COMO margin-inline SÓ AGE NO EIXO X, ELE VAI DEIXAR A PÁGINA NO MEIO! */
   margin-inline: auto;
 }

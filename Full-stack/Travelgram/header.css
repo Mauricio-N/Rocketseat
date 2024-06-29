@@ -6,15 +6,20 @@ header{
 .profile{
   display: flex;
   align-items: center;
-  max-width: 58rem;
+  max-width: 59rem;
   gap: 3.2rem;
   /* border: 1px solid red; */
 }
 .profile img{
   width: 17.6rem;
+  height: 17.6rem;
+  /* CASO A IMAGEM NÃO SEJA QUADRADA, ELE IRA TENTAR AJUDAR */
+  object-fit: cover;
+  /* PARA GARANTIR QUE A FOTO QUE VENHA FIQUE COM AS BORDAS ARREDONDADAS */
+  border-radius: 50%;
 }
 #about{
-  max-width: 38.4rem;
+  max-width: 37rem;
   /* border: 1px solid black; */
   }
 section#about h1{
@@ -28,9 +33,9 @@ section#about p{
 .info{
   display: flex;
   align-items: center;
+  width: 28rem;
 }
 .info ul{
-  width: 28rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
