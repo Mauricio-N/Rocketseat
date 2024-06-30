@@ -41,13 +41,13 @@ a:hover{
   text-decoration: underline;
 }
 .container{
+  /*COMO margin-inline SÓ AGE NO EIXO X, ELE VAI DEIXAR A PÁGINA NO MEIO! */
+  margin-inline: auto;
   /* PADDING-INLINE AGE NO EIXO X, PODENDO TER 2 VALORES */
   padding-inline: 3.2rem;
   /* COM O MAX ELE VAI SEGURAR ATÉ O MAXIMO */
   max-width: 128rem;
   min-width: 74rem;
-  /*COMO margin-inline SÓ AGE NO EIXO X, ELE VAI DEIXAR A PÁGINA NO MEIO! */
-  margin-inline: auto;
 }
 .bg-surface-color{
   background-color: var(--surface-color);
