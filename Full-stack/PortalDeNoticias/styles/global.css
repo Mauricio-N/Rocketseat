@@ -45,5 +45,23 @@ a:hover{
   color: var(--brand-color-light);
 }
 h1,h2,h3{
+  /* Ira herdar a fonte de pai(body) */
   font: inherit;
+}
+
+.container{
+  /* Lagura maxima da pagina */
+  max-width: 128rem;
+  /* Preenchimento interno da pagina */
+  padding-inline: 3.2rem;
+  /* Centraliza a pagina no meio */
+  margin-inline: auto;
+}
+/* utility-first é uma classe que vai fazer apenas uma coisa */
+.grid{
+  display: grid;
+}
+/* utility-first é uma classe que vai fazer apenas uma coisa */
+.grid-flow-col{
+  grid-auto-flow: column;
 }
