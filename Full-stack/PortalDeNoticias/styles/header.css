@@ -14,3 +14,11 @@
     justify-self: end;
   }
 }
+#secondary{
+  padding-block: .8rem;
+  border: solid 1px var(--stroke-color);
+  /* Retira as bordas dos lados */
+  border-inline: none;
+  /* COMO A SEGUNDA NAV ESTÁ COM A CLASSE GRID E GRID-FLOW É POSSIVEL USAR O justify-content:*/
+  justify-content: space-between;
+}

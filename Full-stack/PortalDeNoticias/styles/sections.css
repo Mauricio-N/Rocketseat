@@ -1,0 +1,8 @@
+#featured{
+  img{
+    /* Preenche a altura em 100, não permitindo que fique diferença de algura */
+    height: 100%;
+    /* Evita que a imagem fique achatada */
+    object-fit: cover;
+  }
+}

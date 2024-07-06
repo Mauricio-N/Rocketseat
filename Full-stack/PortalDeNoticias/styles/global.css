@@ -6,7 +6,6 @@
 
 :root{
   font-size: 62.5%;
-  
   /* FONTES: */
   /* SHORTHAND */
   /* font-weight font-size/line-height font-family */
@@ -17,8 +16,6 @@
   --text-span: 600 1.4rem/1.45 var(--font-family);
   --text: 400 1.6rem/1.4 var(--font-family)
   --text-sm: 400 1.4rem/1.60 var(--font-family);
-  
-
 
   /* PALETA DE CORES */
   --brand-color-light: #60a5FA;
@@ -27,8 +24,6 @@
   --stroke-color: #1E293B;
   --text-color-primary: #F1F5F9;
   --text-color-secondary: #cbd5E1;
-
-
 }
 body{
   font-size: 1.6rem;
@@ -48,7 +43,6 @@ h1,h2,h3{
   /* Ira herdar a fonte de pai(body) */
   font: inherit;
 }
-
 .container{
   /* Lagura maxima da pagina */
   max-width: 128rem;
@@ -57,11 +51,9 @@ h1,h2,h3{
   /* Centraliza a pagina no meio */
   margin-inline: auto;
 }
-/* utility-first é uma classe que vai fazer apenas uma coisa */
-.grid{
-  display: grid;
+img{
+  max-width: 100%;
 }
-/* utility-first é uma classe que vai fazer apenas uma coisa */
-.grid-flow-col{
-  grid-auto-flow: column;
+main{
+  margin-top: 4rem;
 }
