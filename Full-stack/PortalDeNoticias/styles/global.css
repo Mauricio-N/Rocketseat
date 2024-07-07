@@ -52,8 +52,22 @@ h1,h2,h3{
   margin-inline: auto;
 }
 img{
+  /* max-width na imagem, garente que ela não vai estourar o seu espaço */
   max-width: 100%;
 }
 main{
   margin-top: 4rem;
+}
+.content-tag{
+  display: inline-block;
+  background-color: var(--brand-color-dark);
+  padding: .4rem .8rem;
+  border-radius: .4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04rem;
+  font: 500 1rem/1.2 var(--font-family);
+  color: var(--text-color-primary);
+  /* text-shadow( Sombra no eixo X/ Sombra no exito Y/ esbaçamento da sombra/ Cor) */
+  text-shadow: 0 .4rem 1.6rem rgba(2,6,23,0.251);
+
 }
