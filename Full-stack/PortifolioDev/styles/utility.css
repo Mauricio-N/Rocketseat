@@ -1,0 +1,24 @@
+.flex{
+  display: flex;
+}
+.flexColumn{
+  flex-direction: column;
+}
+.gap16{
+  gap: 1.6rem;
+}
+.text-h1{
+  font:var(--title-asap-lg);
+ }
+ .text-sub{
+  font:var(--subtitle-incosolata);
+ }
+ .text-maven16{
+  font:var(--title-maven-md);
+ }
+ .text-maven{
+  font:var(--title-maven);
+ }
+ .text-maven14{
+  font:var(--title-maven-ms);
+ }

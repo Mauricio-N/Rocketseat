@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 :root{
-  font-size: 62.5rem;
+  font-size: 62.5%;
 
   /* PALHETA DE CORES */
   --color-red: #E3646E; 
@@ -22,18 +22,24 @@
 
   /* FONTES: */
   --font-asap: "Asap", sans-serif;
-  --font-mavenpro: "Maven Pro", sans-serif;
+  --font-maven-pro: "Maven Pro", sans-serif;
   --font-incosolata: "Inconsolata", monospace;
   /* TAMANHO DAS FONTES */
-  --title-asap-lg: 700 5.6rem/1.2rem var(--font-asap);       
-  --title-asap-md: 700 2.4rem/1.2rem var(--font-asap);       
-  --title-asap-sm: 700 1.6rem/1.2rem var(--font-asap);   
-  --subtitle-incosolata: 400 2rem/1.2rem var(--font-incosolata);
-  --title-maven-md: 700 1.6rem/1.4rem var(--font-mavenpro);       
-  --title-maven-sm: 700 1.4rem/1.4rem var(--font-mavenpro); 
+  --title-asap-lg: 700 5.6rem/1.2 var(--font-asap);       
+  --title-asap-md: 700 2.4rem/1.2 var(--font-asap);       
+  --title-asap-sm: 700 1.6rem/1.2 var(--font-asap);   
+  --subtitle-incosolata: 400 2rem/1.2 var(--font-incosolata);
+  --title-maven: 400 1.4rem/1.4 var(--font-maven-pro);
+  --title-maven-md: 700 1.6rem/1.4 var(--font-maven-pro);       
+  --title-maven-sm: 700 1.4rem/1.4 var(--font-maven-pro); 
   
 }
 body{
   font-size: 1.6rem;
-  max-width: 136.6rem;
+  font: var(--title-maven-md);
+  color: var(--color-gray400);
+}
+a{
+  text-decoration: none;
+  color: inherit;
 }
