@@ -12,15 +12,18 @@
 .gap16{
   gap: 1.6rem;
 }
+.gap32{
+  gap: 3.2rem;
+}
 .text-2xl{
- font:var(--h1)
+ font:var(--h1);
 }
 .text-xl{
- font:var(--h2)
+ font:var(--h2);
 }
 .text-lg{
- font:var(--h3)
+ font:var(--h3);
 }
 .text-sm{
- font:var(--text-sm)
+ font:var(--text-sm);
 }
