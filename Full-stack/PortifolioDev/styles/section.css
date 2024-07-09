@@ -1,6 +1,6 @@
 #intro{
-width: 136.6rem;
 height: 75rem;
+/* border: 1px solid ; */
 background-image: url(../assets/images/Background_Intro.png);
 /* Certifica-se de que a imagem cobre toda a área */
 background-size: cover; 
@@ -8,13 +8,12 @@ background-size: cover;
 background-repeat: no-repeat;
 display: flex;
 justify-content: center;
-
 header > img {
   margin-bottom: 5.6rem;
 }
 #info{
   width: 104rem;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   margin: 12rem 16.3rem 5.7rem;
   display: flex;
   flex-direction: column;
@@ -22,18 +21,31 @@ header > img {
 }
 
 header{
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   width: 68rem;
   text-align: center;
   margin-inline:18rem;
+  margin-bottom: 8rem;
+}
+#links{
+  /* border: 1px solid white; */
+  margin-bottom: 9.4rem;
 }
 a{
- background-color: var(--color-gray300);
- border-radius: 2rem;
- padding: .8rem 1.6rem;
- display: flex;
- align-items: center;
- gap:.8rem
+  background-color: var(--color-gray300);
+  border-radius: 2rem;
+  padding: .8rem 1.6rem;
+  display: flex;
+  align-items: center;
+  gap:.8rem
 }
+
+}
+
+#projects{
+  height: 91.7rem;
+  background-color: var(--color-gray200);
+  padding: 7.2rem 12rem 14.4rem;
+
 }
 

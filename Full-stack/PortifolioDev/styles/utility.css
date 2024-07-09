@@ -4,11 +4,23 @@
 .flexColumn{
   flex-direction: column;
 }
+.grid{
+  display: grid;
+}
+.grid-flow-col{
+  grid-auto-flow:column;
+}
+.grid-3-col{
+  grid-template-columns: 1fr 1fr 1fr;
+}
 .gap16{
   gap: 1.6rem;
 }
 .text-h1{
   font:var(--title-asap-lg);
+ }
+.text-h2{
+  font:var(--title-asap-md);
  }
  .text-sub{
   font:var(--subtitle-incosolata);
