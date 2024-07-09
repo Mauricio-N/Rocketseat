@@ -4,6 +4,12 @@
 .flexColumn{
   flex-direction: column;
 }
+.justify-center{
+justify-content: center;
+}
+.align-center{
+  align-items: center;
+  }
 .grid{
   display: grid;
 }
@@ -21,6 +27,9 @@
  }
 .text-h2{
   font:var(--title-asap-md);
+ }
+ .text{
+  font:var(--title-asap-sm);
  }
  .text-sub{
   font:var(--subtitle-incosolata);
