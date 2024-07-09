@@ -22,6 +22,9 @@ justify-content: center;
 .gap16{
   gap: 1.6rem;
 }
+.gap8{
+  gap: .8rem;
+}
 .text-h1{
   font:var(--title-asap-lg);
  }
@@ -42,4 +45,10 @@ justify-content: center;
  }
  .text-maven14{
   font:var(--title-maven-ms);
+ }
+ .colorMainRED{
+  color: var(--color-red);
+ }
+ .color-gray600{
+  color: var(--color-gray600);
  }
