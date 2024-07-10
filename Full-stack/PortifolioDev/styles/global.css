@@ -30,6 +30,7 @@
   --title-asap-sm: 700 1.6rem/1.2 var(--font-asap);   
   --subtitle-incosolata: 400 2rem/1.2 var(--font-incosolata);
   --title-maven: 400 1.4rem/1.4 var(--font-maven-pro);
+  --title-mavem-contact: 500 1.6rem/1.4 var(--font-maven-pro); 
   --title-maven-md: 700 1.6rem/1.4 var(--font-maven-pro);       
   --title-maven-sm: 700 1.4rem/1.4 var(--font-maven-pro); 
   
@@ -39,6 +40,7 @@ body{
   font-size: 1.6rem;
   font: var(--title-maven-md);
   color: var(--color-gray400);
+  margin-inline: auto;
 }
 a{
   text-decoration: none;

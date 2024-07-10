@@ -49,6 +49,12 @@ justify-content: center;
  .colorMainRED{
   color: var(--color-red);
  }
+ .colorMainPurple{
+  color: var(--color-purple);
+ }
  .color-gray600{
   color: var(--color-gray600);
+ }
+ .color-gray500{
+  color: var(--color-gray500);
  }

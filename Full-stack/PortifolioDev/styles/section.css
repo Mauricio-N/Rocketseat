@@ -6,6 +6,7 @@
   background-size: cover; 
   /* Evita repetição da imagem */
   background-repeat: no-repeat;
+  
   header > img {
     margin-bottom: 5.6rem;
   }
@@ -56,6 +57,9 @@
     width: 33rem;
     border-radius: 1.2rem;
     padding: 1.2rem;
+  }
+  div a:hover{
+    outline: 1.5px solid var(--color-gray400);
   }
   a img{
     width: 100%;
@@ -116,20 +120,20 @@
   padding: 12.8rem 12rem 20rem;
   
   header{ 
-  /* width: 42rem; */
-  gap: .8rem;
-  margin-bottom: 4.8rem;
+    width: 42rem;
+    gap: .8rem;
+    margin-bottom: 4.8rem;
+    margin-inline: auto;
   }
   div{
-    /* border: 1px solid saddlebrown; */
     width:40rem;
     margin-inline: auto;
   }
-  p{
+  a > p{
     width: 28.8rem;
-    gap: 1.2rem;
   }
   .contactCards{
+    /* border: 1px solid saddlebrown; */
     width: 40rem;
     height: 6.8rem;
     background-color: var(--color-gray300);
@@ -137,15 +141,33 @@
     justify-content: space-between;
     padding: 2rem;
     gap: .8rem;
+    color: var(--color-gray500);
+
+    .icon{
+      width:2.8rem;
+      height: 2.8rem;
+      aspect-ratio: 1/1;
+    }
+    .arrow{
+      background-image: url(../assets/icons/ArrowUpRight-default.svg);
+      background-size: cover;
+      width:2rem;
+      height: 2rem;
+      aspect-ratio: 1/1;
+      
+    }
   }
-  .icon{
-    width:2.8rem;
-    height: 2.8rem;
-    aspect-ratio: 1/1;
-  }
-  .arrow{
-    width:2rem;
-    height: 2rem;
-    aspect-ratio: 1/1;
+  .contactCards:hover{
+    outline: 1.5px solid var(--color-blue);
+    .icon{
+      filter: invert(58%) sepia(91%) saturate(3537%) hue-rotate(163deg) brightness(97%) contrast(95%);
+    }
+    .arrow{
+      background-image: url(../assets/icons/ArrowUpRight-hover.svg);
+      background-size: cover;
+      width:2rem;
+      height: 2rem;
+      aspect-ratio: 1/1;
+    }
   }
 }
