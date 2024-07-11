@@ -5,6 +5,45 @@
 }
 :root{
   font-size: 62.5%;
+
+  /* FONTES UTILIZADAS */
+  --font-poppins:  "Poppins", sans-serif;
+  --font-H1: 700 3.2rem/1.2 var(--font-poppins);
+  --font-H2: 700 2.4rem/1.2 var(--font-poppins);
+  --font-H3: 700 2rem/1.2 var(--font-poppins);
+  --font-H4: 700 1,6/1.2 var(--font-poppins);
+  --text: 400 1.6rem/1.5 var(--font-poppins);
+  --text-sm: 400 1.4rem/1.4 var(--font-poppins);
+
+
+  /* PALHETA DE CORES */
+  --brand-light: #F67841;
+  --brand-mid: #F3241c;
+  --brande-dark:#e43a12;
+
+  --text-primary: #292524;
+  --text-secondary: #57534e;
+  --text-tertiary: #8f8881;
+  --text-highlight: #e43a12;
+
+  --surface: #ffffff;
+  --surface-secondary: #FEE7D6;
+  --suface-disable: #e7e5e4;
+
+  --stroke-default: #D6D3D1;
+  --stroke-highlight: #F3541C;
+
+  --semantic-error: #Dc2626;
+
+  --orange: #F9A474;
+  --yellow: #FEDF6F;
+  --green: #C7D78D;
+  --blue: #B8CEDC;
+  --violet: #C3B2E7;
+  --pink: #F682A5;
+
+
+
 }
 body{
   font-size: 1.6rem;
