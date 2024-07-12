@@ -1,0 +1,30 @@
+
+#app{
+  grid-template-columns: 51.25% 48.75%;
+  /* PARA TUDOOO FUNCIONAR É ESSENCIAL TER 100VH!!!!!!!!!!!! */
+  height: 100vh;
+  /* garante que não tera barra de rolagem(transbordamento) */
+  overflow: hidden;
+  
+}
+
+main{
+  padding: 6.4rem;
+  overflow: auto;
+
+  & .main-container{
+    max-width: 52.8rem;
+    margin-left: auto;
+  }
+}
+
+aside{
+  overflow: hidden;
+  padding: 6.4rem;
+  background-color: var(--surface-secondary);
+
+  & .aside-container{
+    max-width: 49.6rem;
+    /* margin-right: auto; */
+  }
+}

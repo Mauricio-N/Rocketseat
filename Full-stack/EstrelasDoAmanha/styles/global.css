@@ -42,9 +42,11 @@
   --violet: #C3B2E7;
   --pink: #F682A5;
 
-
-
 }
 body{
   font-size: 1.6rem;
+  font-family: var(--font-poppins);
+  
+  /* EU GARANTO QUE NADA VAI TER VAI TER BARRA DE ROLAGEM A NÃO SER QUE NO SELETOR SEJA COLOCADO overflow: auto; , como foi inserido no main-container*/
+  overflow: hidden;
 }
