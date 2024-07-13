@@ -45,8 +45,17 @@
 }
 body{
   font-size: 1.6rem;
-  font-family: var(--font-poppins);
+  font: var(--text);
+  color: var(--text-secondary);
   
   /* EU GARANTO QUE NADA VAI TER VAI TER BARRA DE ROLAGEM A NÃO SER QUE NO SELETOR SEJA COLOCADO overflow: auto; , como foi inserido no main-container*/
   overflow: hidden;
+}
+
+h1,h2{
+  color: var(--text-primary);
+}
+
+img{
+  max-width: 100%;
 }

@@ -11,10 +11,25 @@
 main{
   padding: 6.4rem;
   overflow: auto;
-
+  margin-left: auto;
+  
   & .main-container{
     max-width: 52.8rem;
-    margin-left: auto;
+    border: 1px solid red;
+   
+    &>p {
+      font: var(--text);
+    }
+  }
+  
+  & .back{
+    align-items: center;
+    gap: .8rem;
+    margin-bottom: 2.4rem;
+  }
+  & h1{
+    font: 600 2.4rem/1.25 var(--font-poppins);
+    margin-bottom: .8rem;
   }
 }
 
@@ -26,5 +41,19 @@ aside{
   & .aside-container{
     max-width: 49.6rem;
     /* margin-right: auto; */
+
+    & > img{
+      height: auto;
+      margin-top: 3.2rem;
+    }
+  }
+
+  & h2{
+    font: 600 4rem/1.25 var(--font-poppins);
+    margin-bottom: .8rem;
+    & span{
+      color: var(--text-highlight);
+    }
+
   }
 }
