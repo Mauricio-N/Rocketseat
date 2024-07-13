@@ -1,0 +1,18 @@
+@import url(./fields/index.css);
+
+form{
+  margin-top: 4.8rem;
+}
+fieldset{
+  /* tira a borda */
+  border: none;
+  display: grid;
+  gap: 2.4rem;
+}
+legend{
+  font: 600 1.6rem/1.25 var(--font-poppins);
+  margin-bottom: 4.8rem;
+}
+fieldset + fieldset{
+  margin-top: 4.8rem;
+}
