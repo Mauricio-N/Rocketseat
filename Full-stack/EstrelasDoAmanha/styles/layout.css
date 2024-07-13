@@ -15,7 +15,7 @@ main{
   
   & .main-container{
     max-width: 52.8rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
    
     &>p {
       font: var(--text);
