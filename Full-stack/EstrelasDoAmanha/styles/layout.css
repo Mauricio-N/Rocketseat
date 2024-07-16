@@ -41,7 +41,6 @@ aside{
   & .aside-container{
     max-width: 49.6rem;
     /* margin-right: auto; */
-
     & > img{
       height: auto;
       margin-top: 3.2rem;
@@ -54,6 +53,5 @@ aside{
     & span{
       color: var(--text-highlight);
     }
-
   }
 }
