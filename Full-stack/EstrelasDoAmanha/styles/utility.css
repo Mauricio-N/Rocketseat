@@ -7,10 +7,18 @@
 .flex2{
   flex: 2;
 }
-.gap20{
-  gap: 2rem;
+.flexJustCenter{
+  justify-content: center;
 }
-
+.flexalignCenter{
+  align-items: center;
+}
 .grid{
   display: grid;
+}
+.gap8{
+  gap:.8rem;
+}
+.gap20{
+  gap: 2rem;
 }
