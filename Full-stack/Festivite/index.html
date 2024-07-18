@@ -24,42 +24,49 @@
     <main>
       <div class="main-container">
         <h1>Crie seu convite</h1>
-        
+          
         <form enctype="multipart/form-data">
-
           <fieldset class="about">
-            <legend class="flex">
+            <header class="flex">
               <img src="./assets/icons/calendar.svg" alt="">
               <h2>Sobre o evento</h2>
-            </legend>
+            </header>
             
-            <div class="input-wrapper">
-              <label for="title">Titulo:</label>
-              <input type="text" name="title" id="title" placeholder="Nome do evento">
-            </div>
-            
-            <div class="input-wrapper">
-              <label for="begins">Início</label>
-              <input type="datetime-local" name="begins" id="begins">
-            </div>
-            
-            <div class="input-wrapper">
-              <label for="until">Fim</label>
-              <input type="datetime-local" name="until" id="until" placeholder="Termino do evento">
-            </div>
+            <div class="inputs-wrappers grid">
 
-            <div class="radio-wrapper grid">
-              <div class="radio-inner grid">
-                <img src="./assets/icons/building-2.svg" alt="Icone e um préido residencial">
-                <input type="radio" name="in-person" id="in-person">
-                <label for="in-person">Presencial</label>
+              <div class="firstCampus input-wrapper grid">
+                <label for="title">Titulo</label>
+                <input type="text" name="title" id="title" placeholder="Nome do evento">
               </div>
-              <div class="radio-inner grid">
-                <img src="./assets/icons/building-2.svg" alt="Icone e um préido residencial">
-                <input type="radio" name="online" id="online">
-                <label for="online">Online</label>
+                          
+              <div class="secondCampus input-wrapper grid">
+                <label for="begins">Início</label>
+                <input type="datetime-local" name="begins" id="begins">
               </div>
-            </div>
+              <div class="secondCampus input-wrapper grid">
+                <label for="until">Fim</label>
+                <input type="datetime-local" name="until" id="until" placeholder="Termino do evento">
+              </div>
+
+              <div class="thirdCampus grid">
+                <label for="in-person">Tipo</label>
+                    <input type="radio" name="type" id="in-person" >
+                    <div class="ds"></div>
+                    <!-- <input type="radio" name="type" id="online"> -->
+              </div>
+
+              <div class=" input-wrapper grid">
+                <label for="place">Local</label>
+                <input type="text" name="place" id="place" placeholder="Link ou endereço">
+              </div>
+
+              <div class="fourthCampus textarea-wrapper grid" >
+                <label for="adress">Endereço</label>
+                <textarea name="adress" id="adress" placeholder="Escreva sobre os detalhes do evento"></textarea>
+              </div>
+
+            </div><!-- FIM INPUTS-WRAPPERS -->
+
 
           </fieldset>
         </form>
