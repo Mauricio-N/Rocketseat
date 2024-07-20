@@ -1,0 +1,8 @@
+
+#divTextarea{
+  grid-column: 1/3;
+  & textarea{
+    height: 13.6rem;
+    color: var(--text-heading-color);
+  }
+}

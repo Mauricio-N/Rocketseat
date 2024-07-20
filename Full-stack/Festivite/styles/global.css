@@ -7,9 +7,9 @@
 :root{
   font-size: 62.5%;
   /* brand */
-  --brand-light: #592BFF;
+  --brand-dark: #592BFF;
   --brand-mid: #3487CF;
-  --brand-dark: #1D6FB6;
+  --brand-light: #1D6FB6;
   /* Accent Colors */
   --purple: #B259FF;
   --fuschia: #FF59F9;
@@ -50,6 +50,7 @@
 body{
   font-size: 1.6rem;
   font: var(--text-body-md);
+ 
   color: var(--text-body-color);
   background-color: var(--shape-background);
   overflow: hidden;

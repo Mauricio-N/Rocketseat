@@ -1,0 +1,23 @@
+input[type="datetime-local"]{
+  color:var(--input-placeholder);
+  text-transform: uppercase;
+  position: relative;
+  &::-webkit-calendar-picker-indicator{
+    opacity: 0;
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    right: 1.6rem;
+    width: 2rem;
+    height: 2rem;
+    background-image: url(../../assets/icons/calendar.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* HIPER IMPORTANTE, ALINHAR COISA ABSOLUTAS */
+    /* COLOCA O ITEM ABAIXO DA LINHA DO MEIO */
+    top: 50%;
+    /* SOBE METADE O OBJETO EM SI */
+    transform: translateY(-50%)
+  }
+}

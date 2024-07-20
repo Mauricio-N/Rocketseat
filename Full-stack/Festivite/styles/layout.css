@@ -3,7 +3,6 @@
   min-width: 76.8rem;
   margin-inline: auto;
   padding: 2rem;
-  height: 100vh; 
 
   grid-template-columns: 32.25% 1fr;
   gap: 2rem;
@@ -11,6 +10,9 @@
   overflow: hidden;
 
 .main-container{
+  overflow: auto;
+  height: 100vh; 
+  /* height: 1800rem; */
   border-radius: .8rem;
   padding: 8rem 13rem;
   background-color: var(--shape-body);
