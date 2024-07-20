@@ -34,33 +34,42 @@
             
             <div class="inputs-wrappers grid">
 
-              <div class="firstCampus input-wrapper grid">
+              <div id="divTitle" lass="input-wrapper grid">
                 <label for="title">Titulo</label>
                 <input type="text" name="title" id="title" placeholder="Nome do evento">
               </div>
                           
-              <div class="secondCampus input-wrapper grid">
+              <div id="divBegins"class="input-wrapper grid">
                 <label for="begins">Início</label>
                 <input type="datetime-local" name="begins" id="begins">
               </div>
-              <div class="secondCampus input-wrapper grid">
+              <div id="divUntil" class="input-wrapper grid">
                 <label for="until">Fim</label>
                 <input type="datetime-local" name="until" id="until" placeholder="Termino do evento">
               </div>
 
-              <div class="thirdCampus grid">
-                <label for="in-person">Tipo</label>
-                    <input type="radio" name="type" id="in-person" >
-                    <div class="ds"></div>
-                    <!-- <input type="radio" name="type" id="online"> -->
+              <div class="input-wrapper grid">
+                <label id="p-radio">Tipo</label>
+                <div id="divRadio" class="flex">  
+                    <div class="radioInner flex">
+                      <input type="radio" name="type" id="in-person">
+                      <div id="in-personIcon" class="image-radio"></div>
+                      <p>Presencial</p>
+                    </div>
+                    <div class="radioInner flex">
+                      <input type="radio" name="type" id="online">
+                      <div id="onlineIcon" class="image-radio"></div>
+                      <p>Online</p>
+                    </div>
+                  </div>
               </div>
 
-              <div class=" input-wrapper grid">
+              <div id="divPlace" class="input-wrapper grid">
                 <label for="place">Local</label>
                 <input type="text" name="place" id="place" placeholder="Link ou endereço">
               </div>
 
-              <div class="fourthCampus textarea-wrapper grid" >
+              <div id="divTextarea" class="textarea-wrapper grid" >
                 <label for="adress">Endereço</label>
                 <textarea name="adress" id="adress" placeholder="Escreva sobre os detalhes do evento"></textarea>
               </div>
