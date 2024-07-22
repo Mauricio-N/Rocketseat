@@ -1,4 +1,4 @@
-.inputs-wrappers{
+.inputs-wrappers-type{
   grid-template-columns: 50% 50%;
   column-gap: 1.6rem;
   
@@ -10,7 +10,7 @@
       }      
     } 
 
-  & #divRadio{
+  & #divRadio-type{
       border: 1px solid var(--input-stroke);
       background-color: var(--input-base);
       border-radius: .5rem;
@@ -20,22 +20,24 @@
       align-items: center;
       padding: .4rem;
       margin-bottom: 1.2rem;
+
       & .radioInner{
         flex: 1;
-        position: relative;
         
         border-radius: .8rem;
         height: 4rem;
         gap:.8rem;
         justify-content: center;
         align-items: center;
-
+        
+        position: relative;
         & input{
-          /* appearance: none; */
-          all: unset;
+          /* all: unset; */
+          opacity: 0;
           width: 100%;
-          position: absolute;
+          height: 100%;
           inset: 0;
+          position: absolute;
         }
         & .image-radio{
           /* position: absolute; */
@@ -61,9 +63,9 @@
       }
             
       &:hover{
-      background-color: var(--shape-button);} 
+      background-color: var(--shape-button);
+      } 
      
-  
       &:focus-within, &:has(:checked){
         background-color: var(--shape-button);
         outline: 1px solid var(--input-stroke);
@@ -77,6 +79,76 @@
       /* &:has(:checked){ ---> SE ESTIVER SIDO CLICADO
         outline: 1px solid red;
       } */
+    }
+  }
+}
+
+.inputs-wrappers-colors{
+  & #divRadio-Main-color{
+    justify-content: space-between;
+    /* grid-template-columns: repeat(auto-fit, minmax(.3rem, 1fr)); */
+    & input{
+      all: unset;
+      appearance: none;
+
+      width: 2.8rem;
+      height: 2.8rem;
+      
+      border-radius: 100%;
+      border: .6rem solid var(--shape-button);       
+
+      &:focus, &:checked{
+        outline: 3px solid var(--brand-light);
+      }
+      /* 
+  Diferenças Chave:
+  &:checked é aplicado diretamente ao elemento que está em estado "marcado".
+  &:has(:checked) é aplicado a um elemento pai que contém um filho "marcado".
+  
+  Considerações de Suporte:
+  &:checked é amplamente suportado em todos os navegadores modernos.
+  &:has() ainda não é amplamente suportado em todos os navegadores. Você deve verificar a compatibilidade antes de usar em projetos de produção.
+  
+  Resumo:
+  Use &:checked para estilizar diretamente elementos que podem ser marcados.
+  Use &:has(:checked) para estilizar elementos pais com base no estado de seus filhos marcados, lembrando-se das limitações de suporte dos navegadores.
+      } */
+    }
+    
+    #brand-light-color{
+      background-color: var(--brand-light);
+    }
+    #navy-color{
+      background-color: var(--navy); 
+    }
+    #purple-color{
+      background-color: var(--purple); 
+    }
+    #fuschia-color{
+      background-color: var(--fuschia);
+    }
+    #pink-color{
+      background-color: var(--pink);
+    }
+    #danger-color{
+     background-color: var(--danger);
+
+    }
+    #orange-color{
+      background-color: var(--orange); 
+    }
+    #yellow-color{
+      background-color: var(--yellow); 
+    }
+    #lime-color{
+      background-color: var(--lime); 
+    }
+    #green-color{
+      background-color: var(--green); 
+    }
+    #cyan-color{
+      background-color: var(--cyan); 
+      
     }
   }
 }

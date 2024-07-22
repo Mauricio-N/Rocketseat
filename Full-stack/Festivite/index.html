@@ -16,8 +16,9 @@
   <div id="page" class="grid">
     <aside>
       <div class="aside-container flex">
-        <img src="./assets/icons/Logo.svg" alt="logo da Festivite">
+        <img src="./assets/icons/Logo.svg" alt="Logo da Festivite">
         <img src="./assets/icons/Festivite.svg" alt="Bolo colorido">
+        <img src="./assets/images/Background.png" alt="Plano de fundo">
         <p>Crie um convite digital para o seu evento</p>
       </div>
   </aside>
@@ -27,12 +28,12 @@
           
         <form enctype="multipart/form-data">
           <fieldset class="about">
-            <header class="flex">
+            <legend class="flex">
               <img src="./assets/icons/calendar.svg" alt="">
               <h2>Sobre o evento</h2>
-            </header>
+            </legend>
             
-            <div class="inputs-wrappers grid">
+            <div class="inputs-wrappers-type grid">
 
               <div id="divTitle" lass="input-wrapper grid">
                 <label for="title">Titulo</label>
@@ -49,8 +50,8 @@
               </div>
 
               <div class="input-wrapper grid">
-                <label id="p-radio">Tipo</label>
-                <div id="divRadio" class="flex">  
+                <label for="in-person">Tipo</label>
+                <div id="divRadio-type" class="flex">  
                     <div class="radioInner flex">
                       <input type="radio" name="type" id="in-person">
                       <div id="in-personIcon" class="image-radio"></div>
@@ -75,9 +76,32 @@
               </div>
 
             </div><!-- FIM INPUTS-WRAPPERS -->
+          </fieldset>  <!-- FIM ABOUT -->
+          
+          <fieldset class="customization">
+            <legend class="flex">
+              <img src="./assets/icons/calendar.svg" alt="">
+              <h2>Personalização</h2>
+            </legend>
+            <div class="inputs-wrappers-colors grid">
+              <label>Cor principal</label>
+              <div id="divRadio-Main-color" class="flex">
+                <input type="radio" name="main-color" id="brand-light-color">
+                <input type="radio" name="main-color" id="navy-color">
+                <input type="radio" name="main-color" id="purple-color">
+                <input type="radio" name="main-color" id="fuschia-color">
+                <input type="radio" name="main-color" id="pink-color">
+                <input type="radio" name="main-color" id="danger-color">
+                <input type="radio" name="main-color" id="orange-color">
+                <input type="radio" name="main-color" id="yellow-color">
+                <input type="radio" name="main-color" id="lime-color">
+                <input type="radio" name="main-color" id="green-color">
+                <input type="radio" name="main-color" id="cyan-color">
+              </div>
+            </div>
 
 
-          </fieldset>
+          </fieldset>  <!-- FIM CUSTOMIZATION -->
         </form>
 
       </div>

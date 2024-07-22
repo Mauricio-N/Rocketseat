@@ -28,10 +28,13 @@ form{
   }
   label{
    padding-bottom: 1.6rem;
+   display: block;
   }
   & fieldset{
     border: none;
     /* max-width: 56rem; */
   }
-   
+  fieldset + fieldset{
+    margin-top: 4.8rem;
+  } 
 }
