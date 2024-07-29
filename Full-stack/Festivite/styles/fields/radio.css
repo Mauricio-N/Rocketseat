@@ -84,6 +84,7 @@
 }
 
 .inputs-wrappers-colors{
+  margin-bottom: 2.8rem;
   & #divRadio-Main-color{
     justify-content: space-between;
     /* grid-template-columns: repeat(auto-fit, minmax(.3rem, 1fr)); */
@@ -101,18 +102,19 @@
         outline: 3px solid var(--brand-light);
       }
       /* 
-  Diferenças Chave:
-  &:checked é aplicado diretamente ao elemento que está em estado "marcado".
-  &:has(:checked) é aplicado a um elemento pai que contém um filho "marcado".
-  
-  Considerações de Suporte:
-  &:checked é amplamente suportado em todos os navegadores modernos.
-  &:has() ainda não é amplamente suportado em todos os navegadores. Você deve verificar a compatibilidade antes de usar em projetos de produção.
-  
-  Resumo:
-  Use &:checked para estilizar diretamente elementos que podem ser marcados.
-  Use &:has(:checked) para estilizar elementos pais com base no estado de seus filhos marcados, lembrando-se das limitações de suporte dos navegadores.
-      } */
+      Diferenças Chave:
+      &:checked é aplicado diretamente ao elemento que está em estado "marcado".
+      &:has(:checked) é aplicado a um elemento pai que contém um filho "marcado".
+      
+      Considerações de Suporte:
+      &:checked é amplamente suportado em todos os navegadores modernos.
+      &:has() ainda não é amplamente suportado em todos os navegadores. Você deve verificar a compatibilidade antes de usar em projetos de produção.
+      
+      Resumo:
+      Use &:checked para estilizar diretamente elementos que podem ser marcados.
+      Use &:has(:checked) para estilizar elementos pais com base no estado de seus filhos marcados, lembrando-se das limitações de suporte dos navegadores.
+          } 
+      */
     }
     
     #brand-light-color{
@@ -152,3 +154,97 @@
     }
   }
 }
+
+.inputs-wrappers-themes{
+  row-gap: 2.8rem;
+
+ & #divRadio-theme{
+  max-width: 56rem;
+   /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: repeat(auto-fit, 13rem);
+  gap: .8rem;
+  & .cards-themes{
+    background-color: var(--shape-button);
+
+    border-radius: .8rem;
+    border: 2px solid var(--input-stroke);
+
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+    padding: .4rem;
+
+
+    position: relative;
+    & input{
+      all: unset;
+      appearance: none;
+
+      position: absolute;
+      inset: 0;
+      
+      width: 100%;
+      height: 100%;
+
+      &:hover{
+        outline: 3px solid var(--brand-light);
+        border-radius: .8rem;
+      }
+      &:focus, &:checked{
+        outline: 3px solid var(--brand-light);
+        border-radius: .8rem;
+      }
+    }
+    & img{
+      width: 100%;
+    }
+  }
+  }
+
+ & #divStyleAndUpload-theme{
+  gap: 1.6rem;   
+  & .styleMode{
+      border: 1px solid goldenrod;
+      flex: 1;
+      & .styleModeInner{
+        align-items: center;
+        gap: 1.6rem;
+      }  
+      & input{
+        all: unset;
+        appearance: none;
+        border: 1px solid green;
+        width: 6.4rem;
+        height: 3.2rem;
+        background-image: url(../../assets/icons/switchOFF.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        &:checked{
+          background-image: url(../../assets/icons/switchON.svg);
+          }
+      }
+    }
+
+    
+
+    
+    /* & input{
+      position: absolute;
+      width: 6.4rem;
+      height: 3.2rem;
+      background-size: contain;
+      
+      width: 100%;
+      
+      &:focus, &:checked{
+        background-image: url(../../assets/icons/switchON.svg);
+        }
+        } */
+      
+    & .files{
+      border: 1px solid red;
+    }
+  }
+
+}
+
