@@ -208,39 +208,26 @@
       flex: 1;
       & .styleModeInner{
         align-items: center;
-        gap: 1.6rem;
+        gap: 1.2rem;
       }  
       & input{
         all: unset;
         appearance: none;
-        border: 1px solid green;
         width: 6.4rem;
         height: 3.2rem;
         background-image: url(../../assets/icons/switchOFF.svg);
         background-repeat: no-repeat;
         background-size: contain;
+
+        &:hover, &:focus{
+          outline: 2px solid var(--brand-light);
+          border-radius: 999px;
+        }
         &:checked{
           background-image: url(../../assets/icons/switchON.svg);
           }
       }
     }
-
-    
-
-    
-    /* & input{
-      position: absolute;
-      width: 6.4rem;
-      height: 3.2rem;
-      background-size: contain;
-      
-      width: 100%;
-      
-      &:focus, &:checked{
-        background-image: url(../../assets/icons/switchON.svg);
-        }
-        } */
-      
     & .files{
       border: 1px solid red;
     }
