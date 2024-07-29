@@ -1,7 +1,8 @@
-@import url(./fields/radio.css);
 @import url(./fields/textarea.css);
 @import url(./fields/datetime-local.css);
-
+@import url(./fields/radio.css);
+@import url(./fields/checkbox.css);
+@import url(./fields/files.css);
 form{
   & input, & textarea{
     border: 1px solid var(--input-stroke);

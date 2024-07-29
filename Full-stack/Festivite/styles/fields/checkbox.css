@@ -1,0 +1,33 @@
+
+ #divStyleAndUpload-theme{
+  gap: 1.6rem;   
+  & .styleMode{
+      flex: 1;
+      & .styleModeInner{
+        /* border: 1px solid red; */
+        align-items: center;
+        gap: 1.2rem;
+        
+      }  
+      & input{
+        all: unset;
+        appearance: none;
+         
+        inset: 0;
+        transform: translateY(10%);
+        width: 6.4rem;
+        height: 3.2rem;
+        background-image: url(../../assets/icons/switchOFF.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        &:hover, &:focus{
+          outline: 2px solid var(--brand-light);
+          border-radius: 99.9rem;
+        }
+        &:checked{
+          background-image: url(../../assets/icons/switchON.svg);
+          }
+      }
+    }
+  }
